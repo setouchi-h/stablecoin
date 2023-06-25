@@ -42,7 +42,7 @@ pragma solidity ^0.8.18;
  */
 contract DSCEngine {
     function depositCollateralAndMintDsc() external {}
-    
+
     function depositCollateral() external {}
 
     function redeemCollateralForDsc() external {}
@@ -51,9 +51,10 @@ contract DSCEngine {
 
     function mintDsc() external {}
 
+    // used to burn stable coin when collateral is relatively small than stable coin
     function burnDsc() external {}
 
     function liquidate() external {}
 
-    function getHealth() external view {}
+    function getHealthFactor() external view {}
 }
